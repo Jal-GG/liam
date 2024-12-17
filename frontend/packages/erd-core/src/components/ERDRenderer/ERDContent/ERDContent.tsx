@@ -94,10 +94,6 @@ export const ERDContentInner: FC<Props> = ({
         (e) => e.source === nodeId || e.target === nodeId,
       )
 
-      const updatedEdges = edges.map((e) =>
-        relatedEdges.includes(e) ? highlightEdge(e) : unhighlightEdge(e),
-      )
-
       const updatedNodes = nodes.map((node) => {
         if (node.id === nodeId) {
           return { ...node, data: { ...node.data, isHighlighted: true } }
@@ -136,16 +132,13 @@ export const ERDContentInner: FC<Props> = ({
         }
       })
 
-      setEdges(updatedEdges)
       setNodes(updatedNodes)
     },
-    [edges, nodes, setNodes, setEdges, relationships],
+    [edges, nodes, setNodes, relationships],
   )
 
   const handlePaneClick = useCallback(() => {
     setActiveNodeId(null)
-
-    const updatedEdges = edges.map(unhighlightEdge)
 
     const updatedNodes = nodes.map((node) => ({
       ...node,
@@ -157,9 +150,8 @@ export const ERDContentInner: FC<Props> = ({
       },
     }))
 
-    setEdges(updatedEdges)
     setNodes(updatedNodes)
-  }, [edges, nodes, setNodes, setEdges])
+  }, [nodes, setNodes])
 
   const handleMouseEnterNode: NodeMouseHandler<Node> = useCallback(
     (_, { id }) => {
