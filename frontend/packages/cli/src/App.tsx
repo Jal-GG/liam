@@ -35,6 +35,8 @@ const cliVersionData = {
 const cliVersion = v.parse(cliVersionSchema, cliVersionData)
 
 function App() {
+  console.log('cliVersion', cliVersion)
+
   return (
     <CliVersionProvider cliVersion={cliVersion}>
       <ERDRenderer />
