@@ -10127,7 +10127,7 @@ Unknown manually approved
 
 
 <a name="tailwindcss"></a>
-### tailwindcss v3.4.15
+### tailwindcss v3.4.1
 #### 
 
 ##### Paths
