@@ -254,7 +254,7 @@ importers:
         specifier: workspace:*
         version: link:../configs
 
-  packages/try-erd:
+  packages/erd-web:
     dependencies:
       next:
         specifier: 15.1.2
