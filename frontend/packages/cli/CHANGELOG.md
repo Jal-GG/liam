@@ -1,5 +1,12 @@
 # @liam-hq/cli
 
+## 0.3.4
+
+### Patch Changes
+
+- d83bc18: 🐛 Adjust the item height calculation in the Columns component.
+- 285c185: 🐛 fix: ONE_TO_ONE cardinality inconsistency between left and right
+
 ## 0.3.3
 
 ### Patch Changes

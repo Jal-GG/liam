@@ -1,5 +1,11 @@
 # @liam-hq/ui
 
+## 0.0.12
+
+### Patch Changes
+
+- 285c185: 🐛 fix: ONE_TO_ONE cardinality inconsistency between left and right
+
 ## 0.0.11
 
 ### Patch Changes

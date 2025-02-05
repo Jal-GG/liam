@@ -1,5 +1,13 @@
 # @liam-hq/erd-core
 
+## 0.0.25
+
+### Patch Changes
+
+- d83bc18: 🐛 Adjust the item height calculation in the Columns component.
+- Updated dependencies [285c185]
+  - @liam-hq/ui@0.0.12
+
 ## 0.0.24
 
 ### Patch Changes
