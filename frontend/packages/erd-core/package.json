@@ -25,15 +25,13 @@
     "vitest": "2.1.4"
   },
   "scripts": {
-    "dev": "pnpm run '/^dev:.*/'",
-    "dev:css": "tcm src --watch",
-    "fmt": "pnpm run '/^fmt:.*/'",
-    "fmt:biome": "biome check --write --unsafe .",
-    "gen": "pnpm run '/^gen:.*/'",
-    "gen:css": "tcm src",
-    "lint": "pnpm run '/^lint:.*/'",
-    "lint:biome": "biome check .",
-    "lint:tsc": "tsc --noEmit",
-    "test": "vitest --watch=false"
-  }
+  "dev:css": "tcm src --watch",
+  "dev:next": "next dev --port 3001",  
+  "fmt:biome": "biome check --write --unsafe .",
+  "gen:css": "tcm src",
+  "lint:biome": "biome check .",
+  "lint:tsc": "tsc --noEmit",
+  "test": "vitest --watch=false"
+}
+
 }
